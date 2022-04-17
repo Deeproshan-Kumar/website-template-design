@@ -1,0 +1,198 @@
+<!-- Designed by - Deeproshan Kumar 
+Project Name - Laptop Keyboard UI 
+Technology - HTML5, CSS3 and Vanilla JS
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lenovo V130IKB Keyboard UI</title>
+  </head>
+  <body>
+    <main>
+      <div id="surface">
+        <button id="powerbtn" onclick="btnon()"></button>
+        <div id="keyboard">
+          <div class="firstrow">
+            <button class="row1">Esc</button>
+            <button class="row1">
+              <i class="fa fa-volume-off"><br /><span>F1</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-volume-down"><br /><span>F2</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-volume-up"><br /><span>F3</span><br /></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-microphone-slash"><br /><span>F4</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-repeat"><br /><span>F5</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-desktop"><br /><span>F6</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-plane"><br /><span>F7</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-camera-retro"><br /><span>F8</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-lock"><br /><span>F9</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-screen"></i
+              ><i class="fa fa-desktop"><br /><span>F10</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-sun-o">-<br /><span>F11</span></i>
+            </button>
+            <button class="row1">
+              <i class="fa fa-sun-o">+<br /><span>F12</span></i>
+            </button>
+            <button class="row1">PrtSc</button>
+            <button class="row1">Insert</button>
+            <button class="row1 delete">Delete</button>
+            <button class="row1">
+              <i class="fa fa-play"></i><i class="fa fa-pause"></i>
+            </button>
+            <button class="row1"><i class="fa fa-stop"></i></button>
+            <button class="row1"><i class="fa fa-fast-backward"></i></button>
+            <button class="row1"><i class="fa fa-fast-forward"></i></button>
+          </div>
+          <div class="secondrow">
+            <button class="square">~<br /><span>`</span></button>
+            <button class="square">!<br /><span>1</span></button>
+            <button class="square">@<br /><span>2</span></button>
+            <button class="square">#<br /><span>3</span></button>
+            <button class="square">$<br /><span>4</span></button>
+            <button class="square">%<br /><span>5</span></button>
+            <button class="square">^<br /><span>6</span></button>
+            <button class="square">&<br /><span>7</span></button>
+            <button class="square">*<br /><span>8</span></button>
+            <button class="square">(<br /><span>9</span></button>
+            <button class="square">)<br /><span>0</span></button>
+            <button class="square">_<br /><span>-</span></button>
+            <button class="square">+<br /><span>=</span></button>
+            <button id="backspace">Backspace</button>
+            <button class="numeric" onclick="numlockon()">
+              <span id="light">.</span> Num <br />Lock
+            </button>
+            <button class="numeric">/</button>
+            <button class="numeric">*</button>
+            <button class="numeric">-</button>
+          </div>
+          <div class="thirdrow">
+            <button id="tab">Tab</button>
+            <button class="square">Q</button>
+            <button class="square">W</button>
+            <button class="square">E</button>
+            <button class="square">R</button>
+            <button class="square">T</button>
+            <button class="square">Y</button>
+            <button class="square">U</button>
+            <button class="square">I</button>
+            <button class="square">O</button>
+            <button class="square">P</button>
+            <button class="square">{<br /><span>[</span></button>
+            <button class="square">}<br /><span>]</span></button>
+            <button id="backslash">|<br /><span>\</span></button>
+            <button class="numeric">7<br /><span>Home</span></button>
+            <button class="numeric">
+              8<br /><span><i class="fa fa-arrow-up"></i></span>
+            </button>
+            <button class="numeric">9<br /><span>PgUp</span></button>
+            <button id="plus">+</button>
+          </div>
+          <div class="fourthrow">
+            <button id="capslock">CapsLk</button>
+            <button class="square">A</button>
+            <button class="square">S</button>
+            <button class="square">D</button>
+            <button class="square">F</button>
+            <button class="square">G</button>
+            <button class="square">H</button>
+            <button class="square">J</button>
+            <button class="square">K</button>
+            <button class="square">L</button>
+            <button class="square">:<br /><span>;</span></button>
+            <button class="square">"<br /><span>'</span></button>
+            <button id="enter">Enter</button>
+            <button class="numeric">
+              4<br /><span><i class="fa fa-arrow-left"></i></span>
+            </button>
+            <button class="numeric">5<br /></button>
+            <button class="numeric">
+              6<br /><span><i class="fa fa-arrow-right"></i></span>
+            </button>
+          </div>
+          <div class="fifthrow">
+            <button id="shift">Shift</button>
+            <button class="square">Z</button>
+            <button class="square">X</button>
+            <button class="square">C</button>
+            <button class="square">V</button>
+            <button class="square">B</button>
+            <button class="square">N</button>
+            <button class="square">M</button>
+            <button class="square"><<br /><span>,</span></button>
+            <button class="square">><br /><span>.</span></button>
+            <button class="square">?<br /><span>/</span></button>
+            <button id="Shift">Shift</button>
+            <button class="numeric">1<br /><span>End</span></button>
+            <button class="numeric">
+              2<br /><span><i class="fa fa-arrow-down"></i></span>
+            </button>
+            <button class="numeric">3<br /><span>PgDn</span></button>
+            <button id="Enter">Enter</button>
+          </div>
+          <div class="sixthrow">
+            <button class="special">Ctrl</button>
+            <button class="special">Fn</button>
+            <button class="special"><i class="fa fa-windows"></i></button>
+            <button class="special">Alt</button>
+            <button id="spacebar"></button>
+            <button class="special">AltGr</button>
+            <button class="special">Ctrl</button>
+            <button class="arrow-x">
+              <i class="fa fa-arrow-left"></i><span> Home</span>
+            </button>
+            <div class="halfbtn">
+              <button class="half">
+                <i class="fa fa-arrow-up"></i><span> PgUp</span>
+              </button>
+              <button class="half">
+                <i class="fa fa-arrow-down"></i><span> PgDn</span>
+              </button>
+            </div>
+            <button class="arrow-x">
+              <i class="fa fa-arrow-right"></i><span> End</span>
+            </button>
+            <button class="zero">0<br /><span>Ins</span></button>
+            <button class="numeric">.<br /><span>Del</span></button>
+          </div>
+        </div>
+        <div id="mousepad"></div>
+      </div>
+    </main>
+    <script>
+      function btnon() {
+        let powerbtn = document.querySelector("#powerbtn");
+        powerbtn.classList.toggle("active");
+      }
+      function numlockon() {
+        let light = document.querySelector("#light");
+        light.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
